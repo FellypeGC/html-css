@@ -9,6 +9,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -61,7 +62,7 @@ a {
 
 nav {
     background-color: rgb(17, 66, 17);
-    padding-bottom: 8px;
+    padding: 10px 20px 9px;
     width: 100%;
 }
 
@@ -219,8 +220,10 @@ footer {
     background-color: #104b2c;
     color: #fff;
     text-align: center;
-    font-size: .8rem;
+    font-size: 1.2rem;
     padding: 5px;
+    width: 100%;
+    margin-top: 30px;
 }
 
 footer p a {
@@ -231,7 +234,8 @@ footer p a {
 
 footer a:hover {
     text-decoration: underline;
-    color: #288E59;
+    color: #fff;
+    padding: 4px;
 }
 
 
