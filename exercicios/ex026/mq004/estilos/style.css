@@ -16,7 +16,7 @@ html {
 
 body {
     background: black url(../imagens/back-phone.jpg) no-repeat;
-    background-size: cover cover;
+    background-size: cover;
     background-position: center center;
 }
 
@@ -37,6 +37,7 @@ h1 {
  }
 
 img {
+    max-width: 100%;
     display: block;
     margin: auto;
 }
