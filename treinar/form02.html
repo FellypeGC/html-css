@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Treino</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: #B9C7B9;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        main {
+            background-color: #D5D8D5;
+            width: 600px;
+            height: 800px;
+            margin: auto;
+            margin-top: 67.5px;
+            border-radius: 9px;
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 30px;
+        }
+
+        h1, p {
+            color: rgb(10, 59, 10);
+        }
+
+        
+        .login {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label, input {
+            padding: 10px;
+        }
+
+        label {
+            display: flex;
+            justify-content: start;
+            font-weight: bold;
+            margin-left: 2.9rem;
+        }
+
+        input {
+            border-radius: 7px;
+            border: 1px solid rgba(128, 128, 128, 0.384);
+        }
+
+        #iemail, #ipassword {
+            width: 80%;
+            margin: auto;
+        }
+
+        .check {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            
+        }
+
+        .icheckbox {
+            margin-left: 0;
+            margin-right: 4.9rem;
+        }
+
+        button {
+            background-color: rgb(14, 105, 14);
+            width: 80%;
+            color: #FFFFFF;
+            padding: 10px;
+            border: none;
+            border-radius: 7px;
+        }
+
+        a, .icheckbox {
+            color: rgb(14, 105, 14);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .margintop {
+            margin-top: 10rem;
+        }
+
+        .acc, button{
+            margin-top: 20px;
+        }
+
+        .acc {
+            margin-top: 2.5rem;
+        }
+
+        .bold {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <form action="login.php" method="post">
+            <div class="margintop">
+                <h1>Welcome back</h1>
+                <p class="bold">Please enter your details</p>
+                <div class="login">
+                    <label for="iemail">Email</label>
+                    <input type="email" name="email" id="iemail" placeholder="Enter your email">
+                    <label for="ipassword">Password</label>
+                    <input type="password" name="password" id="ipassword" placeholder="Enter your password">
+                </div>
+
+                <div class="check">
+                    <input type="checkbox" name="checkbox" id="icheckbox"> <label for="icheckbox" class="icheckbox">Remember me for 30 days</label>
+                    <a href="#">Forgot password</a>
+                </div>
+                
+                <div id="Signup">
+                    <button type="submit">Sign in</button>
+                    
+                </div>
+
+                <p class="acc">Don't have an account? <a href="#" class="acc">Sign up</a></p>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
