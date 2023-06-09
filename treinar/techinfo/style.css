@@ -6,6 +6,7 @@
     font-size: 1.2rem;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    justify-content: center;
 }
 
 body {
@@ -35,73 +36,94 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: #ff6b01;
+    text-decoration: underline solid #ff6b01;
+}
+
 main {
-    padding: 3rem;
-    margin: 4rem;
+    width: 92vw;
+    padding: 2.5rem; 
 }
 
 main h1 {
     display: flex;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 
-.about__metrics {
-    display: grid;
-    grid-template-columns: repeat(2, max-content);
-    grid-template-rows: repeat(2, max-content);
-    gap: 4rem;
-    margin-bottom: 3rem;
-}
-
-.about__metrics p {
-    font-weight: 600;
-    font-size: 3.75rem;
-    line-height: 4.5rem;
-    color: #b5b7bf;
-    text-align: center;
-    letter-spacing: -0.02em;
+main p {
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    border: 1px solid #e0e0e033;
-    padding: 1.5rem 2rem;
-    transition: all 0.2s ease-in-out;
+    margin-top: 2rem;
 }
 
-.about__metrics p span {
-    font-weight: 600;
-    font-size: 1.125rem;
-    line-height: 4.5rem;
-    margin-top: -30px;
-    color: #ff6b01;
-}
-
-p {
-    display: block;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-}
-
-p span {
-    display: block;
-    flex-direction: column;
-}
-
-.about__container > div {
-    flex: 1 1 400px;
-}
-
-.about__container {
+.container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    max-width: 700px;
+    height: 500px;
     flex-wrap: wrap;
-    margin-top: 3rem;
+    align-items: center;
+    margin-bottom: 280px;
+}
+
+.projetos, .downloads, .investimento, .comentarios {
+    display: flex;
+    flex-direction: column;
+    margin: .8rem;
+    padding: .2rem;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ffffff42;
+    width: 255px;
+    height: 170px;
+    margin-right: 2.3125rem;
+    margin-top: 1.5rem;
+}
+
+.bold {
+    display: flex;
+    font-weight: bold;
+    font-size: 32px;
+}
+
+span {
+    display: flex;
+    font-size: .9rem;
+    font-weight: bold;
+    justify-content: center;
+    align-items: center;
+    margin-top: -2px;
+    color: #ff6b01;
 }
 
 hr {
     width: 80%;
     margin: auto;
+}
+
+hr, footer {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer p {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+@media (width: 768px) {
+
+    h1 {
+        display: flex;
+        width: 300px;
+    }
+
+    .container {
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
 }
