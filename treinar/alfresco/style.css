@@ -17,13 +17,18 @@ header {
     justify-content: space-around;
     background-color: #404396;
     align-items: center;
-    padding: 20px;
+    padding: 1rem;
 }
 
 header img {
     display: flex;
     width: 68px;
     height: 67px;
+}
+
+#burger {
+    display: none;
+    color: #fff;
 }
 
 menu ul {
@@ -39,6 +44,7 @@ li{
 a {
     color: #FFFFFF;
     text-decoration: none;
+    font-weight: 600;
 }
 
 a:hover {
@@ -47,16 +53,18 @@ a:hover {
 }
 
 main {
-    margin-top: 0;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 div {
     display: flex;
     flex-direction: column;
     width: 303px;
-    margin-left: 6rem;
+    margin-left: 1rem;
     align-items: center;
-    justify-content: center;
 }
 
 
@@ -81,22 +89,35 @@ button {
 .imagens {
     display: flex;
     flex-direction: column;
-    float: right;
-    align-items: center;
-    justify-content: center;
-    margin-right: 400px;
-    margin-top: -400px;
+    object-fit: contain;
+    margin-top: 4rem;
 }
 
 .imagem1 {
     display: flex;
-    width: 585px;
+    width: 400px;
     height: 295px;
 }
 
 .imagem2 {
     width: 278px;
     height: 142px;
-    margin-right: 290px;
 }
 
+
+@media screen and (max-width: 768px) {
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    menu ul {
+        display: none;
+    }
+
+    #burger {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+}
