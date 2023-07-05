@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            display: flex;
+            padding: 2rem;
+            width: 100%;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100%;
+            padding: 1.2rem;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            border: 1px solid rgba(97, 94, 94, 0.452);
+            border-radius: .5rem;
+            width: 400px;
+            padding: 1rem;
+            margin: 1rem;  
+            box-shadow: 0px 2px 2px rgba(19, 18, 18, 0.144);
+        }
+
+        label {
+            display: flex;
+            padding: .5rem;
+        }
+
+        input {
+            padding: .3rem;
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-bottom: 1px solid #070707;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+            padding-top: .4rem;
+        }
+
+        form button {
+            width: 100px;
+            margin: .5rem;
+            padding: .3rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 40px;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Lorem ipsum dolor</h1>
+
+        <img 
+        src="../background.jpeg"
+        alt="imagem">
+
+        <form action="form.php" method="post">
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="iemail" placeholder="Digite seu e-mail..." required>
+
+            <label for="password">Senha</label>
+            <input type="password" name="password" id="ipassword" placeholder="Digite sua senha..." required>
+  
+            <div class="btn">
+                <button type="submit">Entrar</button>
+                <button type="submit">Cadastrar-se</button>
+            </div>
+        </form>
+
+        
+    </main>
+    
+</body>
+</html>
