@@ -12,28 +12,32 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        html {
+            height: 100%;
+            width: 100%;
+            display: flex;
+        }
+
         body {
             display: flex;
-            padding: 2rem;
+            justify-content: center;
             width: 100%;
+            background-image: url('../background.jpeg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            /*background-position: center bottom;*/
         }
 
         main {
             display: flex;
             flex-direction: column;
             justify-content: center;
-            align-items: center;
-        }
-
-        img {
-            max-width: 100%;
-            padding: 1.2rem;
         }
 
         form {
             display: flex;
             flex-direction: column;
-            border: 1px solid rgba(97, 94, 94, 0.452);
+            border: 1px solid rgba(248, 234, 234, 0.555);
             border-radius: .5rem;
             width: 400px;
             padding: 1rem;
@@ -44,6 +48,8 @@
         label {
             display: flex;
             padding: .5rem;
+            color: #fff;
+            
         }
 
         input {
@@ -51,7 +57,13 @@
             border-top: none;
             border-right: none;
             border-left: none;
-            border-bottom: 1px solid #070707;
+            border-bottom: 1px solid #fff;
+            background: none;
+            color: #fff;
+        }
+
+        input::placeholder {
+            color: #ffffffe1;
         }
 
         .btn {
@@ -67,19 +79,41 @@
             cursor: pointer;
             border: none;
             border-radius: 40px;
-            background-color: black;
+            background-color: #2B000D;
             color: white;
             font-weight: bold;
+        }
+
+        form button:hover {
+            transition: 60ms;
+            width: 105px;
+            margin: .5rem;
+            padding: .2rem;
+            cursor: pointer;
+            border: 1px solid #fff;
+            border-radius: 40px;
+            background-color: #2B000D;
+            color: white;
+            font-weight: bold;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            body {
+                display: flex;
+                flex-direction: column;
+            }
+            main {
+                background-color: black;
+                width: 100%;
+                height: 100%;
+                align-items: center;
+            }
         }
     </style>
 </head>
 <body>
     <main>
-        <h1>Lorem ipsum dolor</h1>
-
-        <img 
-        src="../background.jpeg"
-        alt="imagem">
 
         <form action="form.php" method="post">
             <label for="email">E-mail</label>
@@ -94,7 +128,6 @@
             </div>
         </form>
 
-        
     </main>
     
 </body>
