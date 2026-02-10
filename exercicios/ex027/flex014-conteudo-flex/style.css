@@ -12,9 +12,15 @@ body {
   line-height: 1.5rem;
 }
 
-p, h1, h2 {
+p {
   margin-bottom: 10px;
   text-align: justify;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+  line-height: 1.2rem;
+  text-align: left;
 }
 
 header, .normal, .flex-content {
@@ -23,4 +29,40 @@ header, .normal, .flex-content {
 
 .flex-content {
   background-color: rgb(156, 151, 151);
+
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.text-media {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.media-text {
+  display: flex;
+  flex-flow: row wrap-reverse;
+  justify-content: space-between;
+}
+
+article .text {
+  flex: 1 1 500px;
+}
+
+article .media {
+  flex: 1 0 400px;
+}
+
+.media img {
+  display: block;
+  margin: auto;
+  width: 300px;
+  padding: 10px;
+}
+
+.media iframe {
+  display: block;
+  margin: auto;
+  width: 90%;
 }
